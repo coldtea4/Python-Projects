@@ -1,0 +1,31 @@
+import math
+
+#Exercise: 1 & 2
+print(3+4)
+print(3-4)
+print(3*4)
+print(3%4)
+print(3/4)
+print(3**4)
+print(3//4)
+
+print("Taariq")
+print("Abdus-Samad")
+print("United States")
+print("I am enjoying 30 days of python")
+
+print(type(10))
+print(type(9.8))
+print(type(3.14))
+print(type(4 - 4j))
+print(type(['Asabeneh', 'Python', 'Finland']))
+print(type("Taariq"))
+print(type("Abdus-Samad"))
+print(type("United States"))
+
+#Exercise: 3
+point1 = [2,3]
+point2 = [10,8]
+eucDistance = (point2[0] - point1[0])**2 + (point1[1] - point2[1])**2
+eucDistance = math.sqrt(eucDistance)
+print(eucDistance)
