@@ -1,0 +1,54 @@
+import math
+#Day 2: 30 Days of Python programming
+#Exercise 1
+    #Variable assignment
+first_name = "John"
+last_name = "Dope"
+full_name = f"{first_name} {last_name}"
+county = "United States"
+city = "New York"
+age = 22
+year = 2026
+is_married = False
+
+is_true = True
+is_light_on = True
+    #Multiple variable assignment
+rooh_afza = 4.99; book_title = "The Shining"
+mug_price, tea_price = 5.99, 1.99
+
+#Exercise 2
+    #Data Types
+print(type(first_name), type(last_name), type(full_name), type(county), type(city), type(age), type(year), type(is_married), type(is_true), type(is_light_on), type(rooh_afza), type(book_title), type(mug_price), type(tea_price))
+    #String Operations, length comparison, concatenation, formatting, conditional statements
+print(f"Length of first name: {len(first_name)}")
+if len(first_name) > len(last_name):
+    print(f"First name is {len(first_name) - len(last_name)} characters longer than last name")
+elif len(first_name) == len(last_name):
+    print("First name and last name are of equal length")
+else:
+    print(f"Last name is {len(last_name) - len(first_name)} characters longer than first name")
+
+    #Arithmetic Operations
+num_one = 5
+num_two = 4
+total = num_one + num_two
+diff = num_one - num_two
+product = num_one * num_two
+division = num_one / num_two
+remainder = num_two % num_one
+exp = num_one ** num_two
+floor_division = num_one // num_two
+    #Circle area and circumference
+radius = 30
+area = math.pi * radius ** 2
+circumference = 2 * math.pi * radius
+user_radius = int(input("If the radius of a circle is: "))
+print(f"The area of said circle is: {math.pi * user_radius ** 2}")
+    #user input
+user_first_name = input("What is your first name? ")
+user_last_name = input("What is your last name? ")
+user_country = input("What country do you live in? ")
+user_age = int(input("How old are you? "))
+help('keywords')
+
