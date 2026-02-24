@@ -1,0 +1,90 @@
+import math
+
+#day 3: Operators
+my_age = 23
+my_height = 5.25
+my_complex_number = 2 + 3j
+
+#user input to output triangle area
+triangle_base = float(input("Enter base: "))
+triangle_height = float(input("Enter height: "))
+print(f"The area of the triangle is {.5 * triangle_base * triangle_height}")
+
+#user input to output triangle perimeter
+triangle_side_a = float(input("Enter side a: "))
+triangle_side_b = float(input("Enter side b: "))
+triangle_side_c = float(input("Enter side c: "))
+print(f"The perimeter of the triangle is {triangle_side_a + triangle_side_b + triangle_side_c}")
+
+#user input to output length & width of rectangle
+rectangle_L = float(input("Enter length of rectangle: "))
+rectangle_W = float(input("Enter width of rectangle: "))
+print(f"Area of rectangle is {rectangle_L * rectangle_W}")
+
+#Circle radius to area
+circle_rad = float(input("Enter radius of circle: "))
+print(f"Area of circle is {math.pi * circle_rad * 2}")
+
+#slope, x-intercept, & y-intercept of y = 2x - 2
+x_int = 2/2
+y_int = -2
+slope1 = 2
+
+#slope & euclidean distance between point (2,2) and (6,1)
+slope2 = (2 - 1)/(6-2)
+euc_dis = math.sqrt((6-2)**2 + (2-1)**2)
+
+#slope conditional
+if(slope1 > slope2):
+    print("Slope One is greater than Slope Two")
+elif(slope2 > slope1):
+    print("Slope Two is greater than Slope One")
+else:
+    print("Slopes are equal")
+
+#solving for x when y = 0 in y = x^2 + 6x + 9
+x = (-3)**2 + 6*(-3) + 9
+print(f"if y =  x^2 + 6x + 9, then x = {x} when y is equal to 0")
+
+#falsy comparison
+if len("python") != len("dragon"):
+    print("Length of python is not equal to length of dragon")
+else:
+    print("Length of python is equal to length of dragon")
+
+#using 'in'
+contains_on = ("on" in "python") and ("on" in "dragon")
+print("Both 'python' and 'dragon' contain 'on'.", contains_on)
+
+contains_jargon = "jargon" in "I hope this course is not full of jargon"
+
+#using 'not'
+doesnt_contain_on = not contains_on
+
+#conversion
+length = len("python")
+length = float(length)
+length = str(length)
+
+#conditionals, negation, modulo
+user_num = int(input("I will check if the number you input is even or not. Input number: "))
+if user_num%2 != 0:
+    print("Your number is odd")
+else:
+    print("Your number is even")
+
+#floor division & int conversion
+print(7//3 == int(2.7))
+
+#type comparison
+print(type('10') is type(10))
+
+#conversion then comparison
+#print(int('9.8') == 10)
+#Conversion from '9.8' to int does NOT work, can only convert "int" string values to int
+#you would have to convert from string to float THEN to int
+
+#User input
+hours = float(input("Enter Hours: "))
+rate = float(input("Enter rate per hour: "))
+print(f"Your weekly earning is {hours * rate}")
