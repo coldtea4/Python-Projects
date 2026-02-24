@@ -1,0 +1,34 @@
+#Day 4, String methods
+
+#Concatenating strings
+title = ''.join(["Thirty ", "Days ", "Of ", "Python"])
+print(title)
+saying = ''.join(["Coding", "For", "All"])
+saying = "Coding " + "For " + "All"
+print(saying)
+
+#string alteration
+company = "Coding For All"
+print(company)
+print(len(company))
+print(company.upper())
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+print("Coding For All".strip("Coding "))
+
+#Location of substrings
+print(company.index("Coding"))
+print(company.find("Coding"))
+print(company.count("Coding"))
+
+#.replace()
+print(company.replace("Coding", "Python"))
+print("Python for Everyone".replace("Everyone", "All"))
+
+#.split()
+print("Coding For All".split(" "))
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(", "))
+
+#String index
+print(company[0])
