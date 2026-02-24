@@ -90,7 +90,7 @@ rate = float(input("Enter rate per hour: "))
 print(f"Your weekly earning is {(hours * rate):.2f}")
 
 years_lived = int(input("Enter number of years you have lived: "))
-print(f"You have lived for {years_lived * 31536000} years.")
+print(f"You have lived for {years_lived * 31536000} seconds.")
 
 #printing
 print(*("1" * 5))
