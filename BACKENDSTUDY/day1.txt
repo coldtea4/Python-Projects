@@ -1,0 +1,37 @@
+Client - the thing that uses the backend (browser, mobile app, etc.)
+Server - the application running on a machine that listens for requests & sends back
+            responses
+Request - Data sent to the Server (e.g. "GET /users/1")
+Response - Data sent back (e.g. JSON describing said user)
+API - Application pogramming interface (A defined way for software to talk to other
+            software; a web API is usually HTTP based.)
+User -> Browser -> HTTP Request -> Backend -> Database -> Backend -> HTTP Response -> Browser
+
+
+HTTP(HyperText Transfer Protocol): The protocol used for comms between client & server on the web
+HTTP methods:
+Get - read data
+Post - create data
+Put/Patch: update existing data
+Delete: remove data
+
+STATUS CODES:
+200 OK: Request succeeded.
+201 Created: New resource created.
+400 Bad Request: Client sent something invalid.
+401 Unauthorized / 403 Forbidden: Auth issues.
+404 Not Found: Resource doesn’t exist.
+500 Internal Server Error: Something broke on the server.
+
+JSON(JavaScrpit Object Notation): Text format for structured data, looks like Python dicts:
+{
+    "id": 1,
+    "username": "tea",
+    "is_active": true
+}
+
+REST(Representational State Transfer):
+A style of designing APIsL
+    - Use HTTP methods meaningfully (GET for read, POST for create, etc.)
+    - Use URLS to represent resources: /users, /users/1, /posts/5/comments
+
